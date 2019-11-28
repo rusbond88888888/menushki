@@ -1,0 +1,89 @@
+
+.dws-menu{
+    margin: 30px;
+    padding: 0;
+}
+.dws-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    background-color: #2a3644;
+}
+.dws-menu ul ul{
+    margin-top: 10px;
+    margin-left: -10px;
+    display: none;
+    position: absolute;
+    background-color: #c0c1c2;
+}
+.dws-menu ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.dws-menu ul>li{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.dws-menu li{
+    padding: 10px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+.dws-menu ul>li:hover{
+    background-color: #3f4852;
+}
+.dws-menu ul>li a:hover{
+    color: orange;
+}
+.dws-menu li:hover ul{
+    display: block;
+}
+.dws-menu li:hover li{
+    display: block;
+}
+.menu ul{
+    margin-top: 180px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    background-color: #2a3644;
+    border-radius: 2px;
+}
+.menu ul ul{
+    margin-top: 10px;
+    margin-left: -10px;
+    display: none;
+    position: absolute;
+    background-color: #c0c1c2;
+}
+.menu ul li{
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.menu ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover ul{
+    display: block;
+}
+.menu ul>li:hover{
+    background-color: #3f4852;
+}
+.menu ul>li a:hover{
+    color: orange;
+}
+.menu li:hover ul{
+    display: block;
+}
+.menu li:hover li{
+    display: block;
+}
+.sub1,
+.sub2,
+.sub3{
+    display: none;
+}

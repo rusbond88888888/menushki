@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 70px 0 100px 0;
   font-family: Arial, sans-serif;
 }
 .wrapper {
@@ -11,14 +13,23 @@ body {
 .right {
   right: 0;
 }
+.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 h1,
 h2 {
+  margin-top: 0;
   font-size: 24px;
   letter-spacing: 1px;
   color: #bfbfbf;
   font-weight: bold;
 }
-.menu{
+ul {
+  padding-left: 0;
+}
+.menu {
   background-color: #2a3644;
 }
 .menu,
@@ -36,10 +47,10 @@ h2 {
   font-size: 15px;
   font-weight: bold;
 }
-.menu > li:first-child > a{
+.menu > li:first-child > a {
   border-radius: 3px 0 0 3px;
 }
-.menu > li:last-child > a{
+.menu > li:last-child > a {
   border-radius: 0 3px 3px 0;
 }
 .ins-sub li:hover .ins-ins,
@@ -53,13 +64,13 @@ h2 {
 }
 .sub,
 .ins-sub,
-.ins-ins{
+.ins-ins {
   position: absolute;
   display: none;
   width: 210px;
   z-index: 1;
 }
-.sub-menu{
+.sub-menu {
   background-color: #d2d4d5;
   border-radius: 3px;
 }
@@ -67,18 +78,18 @@ h2 {
   border-top: 1px solid #b9bdc1;
   text-align: left;
 }
-.sub-menu li:first-child{
+.sub-menu li:first-child {
   border-top: none;
 }
 .sub-menu li:first-child,
-.sub-menu li:first-child a{
+.sub-menu li:first-child a {
   border-radius: 3px 3px 0 0;
 }
 .sub-menu li:last-child,
-.sub-menu li:last-child a{
+.sub-menu li:last-child a {
   border-radius: 0 0 3px 3px;
 }
-.sub-menu li:hover{
+.sub-menu li:hover {
   background-color: #3f4852;
 }
 .sub-menu li a {
@@ -112,6 +123,85 @@ h2 {
   color: #fd8612;
   background-color: #3f4852;
 }
+.poslugi {
+  width: 420px;
+}
+.poslugi ul {
+  float: left;
+  width: 210px;
+}
+.zapara li{
+  border-bottom: 1px solid #b9bdc1;
+}
+.borderright {
+  border-right: 1px solid #b9bdc1;
+}
+.zapara li:last-child {
+  border-top: none;
+}
+.villadge > li {
+  text-align: center;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+.villadge {
+  position: relative;
+  margin: 0;
+}
+.villadge li:hover {
+  background-color: #3f4852;
+}
+.villadge li a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.villadge li a:hover {
+  color: #fd8612;
+}
+.villadge {
+  float: left;
+}
+.social {
+  margin: 0;
+  float: right;
+  padding: 12px 30px;
+}
+.social li {
+  padding-right: 26px;
+  display: inline-block;
+}
+.menu .social li a{
+  padding: 0;
+}
+.social a {
+  display: block;
+  transition: all 0.5s ease;
+  background: url(../image/social-sprite.png) no-repeat left top;
+}
+a.fb {
+  width: 10px;
+  height: 18px;
+  background-position: -45px -1px;
+}
+a.tw {
+  width: 18px;
+  height: 15px;
+  background-position: -25px -5px;
+}
+a.in {
+  width: 19px;
+  height: 19px;
+  background-position: -2px -1px;
+}
+a.fb:hover {
+  background-position: -45px -22px;
+}
+a.tw:hover {
+  background-position: -25px -25px;
+}
+a.in:hover {
+  background-position: -2px -22px;
+}
 .table {
   display: table;
   width: 100%;
@@ -119,7 +209,7 @@ h2 {
 .row {
   display: table-row;
 }
-.cell{
+.cell {
   display: table-cell;
 }
 .second > li {
@@ -130,18 +220,15 @@ h2 {
 .second li {
   position: relative;
 }
-.second li:hover{
+.second li:hover {
   background-color: #3f4852;
 }
 .second li a {
   font-size: 16px;
   font-weight: bold;
 }
-.second li a:hover{
+.second li a:hover {
   color: #fd8612;
-}
-ul {
-  padding-left: 0;
 }
 .ins-sub {
   padding-left: 215px;
@@ -155,7 +242,6 @@ ul {
 table {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 5px;
 }
 th {
   padding: 16px 0;
@@ -165,12 +251,15 @@ th {
   background-color: #2a3644;
   border: 1px solid #c0c1c2;
 }
-
 td {
   padding: 17px 0 16px 0;
   font-size: 16px;
   border: 1px solid #c0c1c2;
   color: #2a3644;
+}
+.two {
+  text-align: left;
+  padding-left: 23px;
 }
 tr:nth-child(odd) {
   background-color: #f2f2f2;
@@ -178,44 +267,52 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color: #e8e8e8;
 }
-tbody tr :nth-child(1){
-    text-align: center;
+tbody tr :nth-child(1) {
+  width: 60px;
+  text-align: center;
 }
-tbody tr :nth-child(2){
-    padding-left: 26px;
+tbody tr :nth-child(2) {
+  padding-left: 23px;
 }
-tbody tr :nth-child(3){
-    text-align: right;
-    padding-right: 23px;
+tbody tr :nth-child(3) {
+  text-align: right;
+  padding-right: 23px;
+  width: 130px;
 }
-tbody tr :nth-child(4){
-    text-align: right;
-    padding-right: 23px;
+tbody tr :nth-child(4) {
+  text-align: right;
+  padding-right: 23px;
+  width: 130px;
 }
-tbody tr :nth-child(5){
-    text-align: right;
-    padding-right: 23px;
+tbody tr :nth-child(5) {
+  text-align: right;
+  padding-right: 23px;
+  width: 130px;
 }
-tbody tr:hover{
+tbody tr:hover {
   background-color: #c0c1c2;
 }
-.style-table{
+.style-table {
   display: table;
   width: 100%;
+  border-collapse: collapse;
 }
-p{
+p {
   display: table-row;
 }
 b,
-i{
+i {
   display: table-cell;
-  padding: 10px;
-  border: 1px solid #c0c1c2;
   font-style: normal;
+  border: 1px solid #c0c1c2;
 }
-b{
+b {
+  padding: 16px 0;
   background-color: #2a3644;
   color: #fff;
+}
+i {
+  padding: 17px 0 16px 0;
 }
 p:nth-child(odd) {
   background-color: #f2f2f2;
@@ -223,6 +320,28 @@ p:nth-child(odd) {
 p:nth-child(even) {
   background-color: #e8e8e8;
 }
-.style-table p:hover{
+.style-table p:hover {
   background-color: #c0c1c2;
+}
+.table p :nth-child(1) {
+  text-align: center;
+  width: 60px;
+}
+.table p :nth-child(2) {
+  padding-left: 23px;
+}
+.table p :nth-child(3) {
+  text-align: right;
+  padding-right: 23px;
+  width: 130px;
+}
+.table p :nth-child(4) {
+  text-align: right;
+  padding-right: 23px;
+  width: 130px;
+}
+.table p :nth-child(5) {
+  text-align: right;
+  padding-right: 23px;
+  width: 130px;
 }
